@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "problemMatcher": [],
+  "presentation": {
+    "focus": true,
+    "clear": true,
+    "panel": "shared",
+    "reveal": "always",
+  },
+  "options": {
+    "env": {},
+    "cwd"  : "${workspaceFolder}",
+  },
+  "tasks": [
+    { "type": "shell", "label": "run"  ,"icon": { "id": "console", "color": "terminal.ansiGreen"  }, "command": "node"  , "args": [ "${file}"           ], "group": { "kind": "build" }},
+    { "type": "shell", "label": "test" ,"icon": { "id": "beaker" , "color": "terminal.ansiGreen"  }, "command": "node"  , "args": [ "--test", "${file}" ], "group": { "kind": "test"  }},
+    { "type": "shell", "label": "mocha","icon": { "id": "beaker" , "color": "terminal.ansiCyan"   }, "command": "mocha" , "args": [ "${file}"           ], "group": { "kind": "test"  }},
+
+    { "type": "shell", "label": "up"  , "icon": { "id": "rocket" , "color": "terminal.ansiMagenta"}, "command": "docker-compose", "args": [ "up", "-d"  ], "group": { "kind": "build" }},
+    { "type": "shell", "label": "down", "icon": { "id": "stop"   , "color": "terminal.ansiMagenta"}, "command": "docker-compose", "args": [ "down"      ], "group": { "kind": "build" }},
+
+    { "type":"shell", "label": "subl"  , "icon": { "id": "gist"   , "color":"terminal.ansiYellow" }, "command": "subl", "args":[ "-a","${file}"                    ], "presentation": { "reveal": "never" }},
+    { "type":"shell", "label": "chrome", "icon": { "id": "compass", "color":"terminal.ansiCyan"   }, "command": "open", "args":[ "-a","'Google Chrome'", "${file}" ], "presentation": { "reveal": "never" }},
+    { "type":"shell", "label": "finder", "icon": { "id": "browser" , "color":"terminal.ansiBlue"   }, "command": "open", "args":[ "-a","'Google Chrome'", "${file}" ], "presentation": { "reveal": "never" }},
+  ]
+}

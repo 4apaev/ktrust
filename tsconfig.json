@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir"                      : "dist",
+    "module"                      : "es2022",
+    "target"                      : "es2022",
+    "moduleResolution"            : "node",
+    "downlevelIteration"          : true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop"             : true,
+    "declaration"                 : true,
+    "allowJs"                     : true,
+    "pretty"                      : true,
+  },
+
+  "include": [
+    "./src",
+  ],
+
+}

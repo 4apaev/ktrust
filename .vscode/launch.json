@@ -1,0 +1,13 @@
+{
+  "compounds": [],
+  "configurations": [
+    {
+      "name"    : "run",
+      "type"    : "node",
+      "request" : "launch",
+      "program" : "${workspaceFolder}/${relativeFile}",
+      "envFile" : "${workspaceFolder}/.env",
+      "cwd"     : "${workspaceFolder}",
+    },
+  ]
+}
