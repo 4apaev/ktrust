@@ -7,7 +7,7 @@
   "main"    : "./src/srever.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:4apaev/name.git"
+    "url": "git@github.com:4apaev/ktrust.git"
   },
   "scripts": {
     "up"    : "set -a; . ./.env; set +a; docker-compose up --build -d",
